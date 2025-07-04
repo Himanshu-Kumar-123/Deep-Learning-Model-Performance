@@ -122,3 +122,4 @@ $p$ → Number of weights
 > Total loss starts to increase after some time even if the MSE reduces because of the regularization effect. This ensures that the model doesn’t overfit.
 
 
+
