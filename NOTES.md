@@ -38,3 +38,40 @@ It performs poorly on both the training and test sets.
 - Training Loss → High  
 - Validation Loss → High
 
+# Bias-Variance Tradeoff
+
+> It describes the balance between **underfitting** and **overfitting**.
+
+---
+
+| **Term**   | **What it Means**                                      | **Problem It Causes** |
+|------------|--------------------------------------------------------|------------------------|
+| **Bias**   | Error due to oversimplifying the model                 | Underfitting           |
+| **Variance** | Error due to too much sensitivity to training data     | Overfitting            |
+
+---
+
+### 📊 Understanding Variance
+
+- **Variance** refers to how much the model's predictions change when trained on different datasets.
+- It’s a property of the **model**, indicating sensitivity to training data.
+- **High variance** model: Very sensitive → overfits (fits noise)
+- **Low variance** model: More stable → generalizes better
+
+---
+
+### ✅ A Robust Model:
+- Has the **best training**, **validation**, and **test** accuracy
+
+---
+
+### ⚙️ Mechanisms to Control Overfitting/Underfitting:
+- Control number of **neurons**
+- Control number of **layers**
+- Choose appropriate **activation functions**
+- Select suitable **optimizers**
+- Proper **weight initialization**
+- Use **regularization**
+- Apply **dropout**
+- Use **batch normalization**
+
