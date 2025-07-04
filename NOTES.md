@@ -80,3 +80,18 @@ It performs poorly on both the training and test sets.
 **Regularization** is a process to **control the variance** of the model and **prevent overfitting** — i.e., avoid fitting to noise in the data.
 
 > It helps the model generalize better to unseen data by discouraging overly complex models.
+
+# Mean Squared Error (MSE) Loss
+
+The **MSE loss** measures the average of the squares of the errors between predicted values and true values.
+
+\[
+L = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+\]
+
+Where:
+- \( n \): Number of data points
+- \( y_i \): Actual value
+- \( \hat{y}_i \): Predicted value
+
+> A smaller MSE indicates better model performance in regression tasks.
