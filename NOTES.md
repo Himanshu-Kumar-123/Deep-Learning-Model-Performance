@@ -112,6 +112,6 @@ $\hat{y}_i$ → Predicted value
 $w_j$ → Model weights  
 $\lambda$ → Regularization strength (hyperparameter)  
 $n$ → Number of data points  
-$p$ → Number of weights (features or parameters)
+$p$ → Number of weights
 
 > It helps reduce model complexity and overfitting.
