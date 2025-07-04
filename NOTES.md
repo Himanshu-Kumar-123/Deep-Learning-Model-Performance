@@ -98,14 +98,13 @@ $\hat{y}_i$ → Predicted value for data point $i$
 
 > A smaller MSE indicates better model performance.
 
-## Regularized Loss Function (L2)
+### Regularized Loss Function (L2)
 
 The regularized loss adds a penalty for large weights to prevent overfitting:
 
 <p align="center">
   <img src="notes_images/regularized_loss.png" alt="Regularized MSE Loss" width="200"/>
 </p>
-
 Where:
 
 $y_i$ → Actual value  
@@ -115,4 +114,4 @@ $\lambda$ → Regularization strength
 $n$ → Number of data points  
 $p$ → Number of weights (features or parameters)
 
-> This is known as **L2 regularization** or **Ridge penalty**, and it helps reduce model complexity and overfitting.
+> It helps reduce model complexity and overfitting.
