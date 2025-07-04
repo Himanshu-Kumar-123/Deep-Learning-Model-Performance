@@ -98,7 +98,7 @@ $\hat{y}_i$ → Predicted value for data point $i$
 
 > A smaller MSE indicates better model performance.
 
-### Regularized Loss Function (L2)
+### Regularized Loss Function
 
 The regularized loss adds a penalty for large weights to prevent overfitting:
 
