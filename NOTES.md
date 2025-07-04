@@ -75,3 +75,8 @@ It performs poorly on both the training and test sets.
 - Apply **dropout**
 - Use **batch normalization**
 
+## Regularization
+
+**Regularization** is a process to **control the variance** of the model and **prevent overfitting** — i.e., avoid fitting to noise in the data.
+
+> It helps the model generalize better to unseen data by discouraging overly complex models.
