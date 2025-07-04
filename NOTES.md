@@ -116,8 +116,9 @@ $n$ → Number of data points
 $p$ → Number of weights
 
 > It helps reduce model complexity and overfitting.
----
+
 **Example:**
 ![regularization_example](notes_images/regularization_example.png)
 > Total loss starts to increase after some time even if the MSE reduces because of the regularization effect. This ensures that the model doesn’t overfit.
+
 
