@@ -91,8 +91,9 @@ $$
 
 Where:
 
-- \( n \) → Number of data points  
-- \( y_i \) → Actual value  
-- \( \hat{y}_i \) → Predicted value  
+$L$ → Mean squared error loss  
+$n$ → Number of data points  
+$y_i$ → Actual value for data point $i$  
+$\hat{y}_i$ → Predicted value for data point $i$  
 
 > A smaller MSE indicates better model performance in regression tasks.
