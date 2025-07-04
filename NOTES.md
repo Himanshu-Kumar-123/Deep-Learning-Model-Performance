@@ -38,7 +38,7 @@ It performs poorly on both the training and test sets.
 - Training Loss → High  
 - Validation Loss → High
 
-# Bias-Variance Tradeoff
+## Bias-Variance Tradeoff
 
 > It describes the balance between **underfitting** and **overfitting**.
 
