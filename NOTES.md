@@ -105,6 +105,7 @@ The regularized loss adds a penalty for large weights to prevent overfitting:
 <p align="center">
   <img src="notes_images/regularized_loss.png" alt="Regularized MSE Loss" width="200"/>
 </p>
+
 Where:
 
 $y_i$ → Actual value  
@@ -115,7 +116,7 @@ $n$ → Number of data points
 $p$ → Number of weights
 
 > It helps reduce model complexity and overfitting.
-
+---
 **Example:**
 ![regularization_example](notes_images/regularization_example.png)
 
