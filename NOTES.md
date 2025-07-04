@@ -81,7 +81,7 @@ It performs poorly on both the training and test sets.
 
 > It helps the model generalize better to unseen data by discouraging overly complex models.
 
-## Mean Squared Error (MSE) Loss
+### Mean Squared Error (MSE) Loss
 
 The **MSE loss** measures the average of the squares of the errors between predicted values and true values:
 
@@ -96,4 +96,23 @@ $n$ → Number of data points
 $y_i$ → Actual value for data point $i$  
 $\hat{y}_i$ → Predicted value for data point $i$  
 
-> A smaller MSE indicates better model performance in regression tasks.
+> A smaller MSE indicates better model performance.
+
+## Regularized Loss Function (L2)
+
+The regularized loss adds a penalty for large weights to prevent overfitting:
+
+$$
+\sum_{i=1}^{n} \frac{1}{n}(y_i - \hat{y}_i)^2 + \lambda \left( \sum_{j=1}^{p} w_j^2 \right)
+$$
+
+Where:
+
+$y_i$ → Actual value  
+$\hat{y}_i$ → Predicted value  
+$w_j$ → Model weights  
+$\lambda$ → Regularization strength  
+$n$ → Number of data points  
+$p$ → Number of weights (features or parameters)
+
+> This is known as **L2 regularization** or **Ridge penalty**, and it helps reduce model complexity and overfitting.
