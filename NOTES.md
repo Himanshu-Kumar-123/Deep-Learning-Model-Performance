@@ -103,7 +103,12 @@ $\hat{y}_i$ → Predicted value for data point $i$
 The regularized loss adds a penalty for large weights to prevent overfitting:
 
 $$
-\sum_{i=1}^{n} \frac{1}{n}(y_i - \hat{y}_i)^2 + \lambda \left( \sum_{j=1}^{p} w_j^2 \right)
+\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+$$
+
+
+$$
+\sum_{i=1}^n \frac{1}{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^p w_j^2
 $$
 
 Where:
