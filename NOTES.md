@@ -115,3 +115,5 @@ $n$ → Number of data points
 $p$ → Number of weights
 
 > It helps reduce model complexity and overfitting.
+
+![regularization_example](notes_images/regularization_example.png)
