@@ -120,3 +120,15 @@ $p$ → Number of weights
 **Example:**
 ![regularization_example](notes_images/regularization_example.png)
 > Total loss starts to increase after some time even if the MSE reduces because of the regularization effect. This ensures that the model doesn’t overfit.
+
+## Dropout
+
+### Example:
+
+Imagine a teacher is teaching a class where the front benchers are always answering the questions the teacher asks and they’re learning at a much higher rate than the backbenchers. The backbenchers are not able to understand the concepts.
+
+Now the entire class has to participate as a team in some Olympiad and each student has to perform. So, to improve the process of learning, the teacher starts randomly asking questions so that every student participates and learns.
+
+This is similar to **dropout** in Neural Networks.
+
+In a neural network, the weights are randomly initialized, due to which a few neurons can get higher chances of learning.
