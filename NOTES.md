@@ -132,3 +132,7 @@ Now the entire class has to participate as a team in some Olympiad and each stud
 This is similar to **dropout** in Neural Networks.
 
 In a neural network, the weights are randomly initialized, due to which a few neurons can get higher chances of learning.
+
+![overparticipation](notes_images/overparticipation.jpg)
+
+For example, here **N2** is overparticipating and the entire information starts flowing through **N2**.
