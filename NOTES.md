@@ -148,4 +148,4 @@ For example:
 
 This prevents the network from becoming overly dependent on particular neurons, improving generalization and reducing overfitting.
 
-> ⚠️ Note: During inference (testing/prediction), dropout is **disabled** and all neurons are used — but the outputs are scaled accordingly to match the training distribution.
+> ⚠️ Note: During inference (testing/prediction), dropout is **disabled** and all neurons are used.
