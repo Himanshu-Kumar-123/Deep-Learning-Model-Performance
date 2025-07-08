@@ -159,7 +159,7 @@ All the input and output connections of neurons in dropout get deactivated.
 
 Ideally, a dropout layer should be applied after every 2–3 dense layers. Dropout probability is a hyperparameter.
 
-# Batch Normalization
+## Batch Normalization
 
 ### Types of Gradient Descent
 
@@ -173,8 +173,6 @@ Ideally, a dropout layer should be applied after every 2–3 dense layers. Dropo
   *(1 < Batch size < N)*
 
 ---
-
-### Example: 1000 Rows
 
 ### Total 1000 rows
 
