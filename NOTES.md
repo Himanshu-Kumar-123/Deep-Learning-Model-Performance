@@ -136,3 +136,16 @@ In a neural network, the weights are randomly initialized, due to which a few ne
 ![overparticipation](notes_images/overparticipation.jpg)
 
 For example, here **N2** is overparticipating and the entire information starts flowing through **N2**.
+
+### How Dropout Works in Neural Networks?
+
+During each iteration (forward and backward propagation), we randomly **drop neurons** with a given probability.
+
+For example:
+
+- If the **dropout rate = 0.2** on a dense layer with **5 neurons**,  
+  then `0.2 × 5 = 1 neuron` is expected to be dropped (disabled) during each training iteration.
+
+This prevents the network from becoming overly dependent on particular neurons, improving generalization and reducing overfitting.
+
+> ⚠️ Note: During inference (testing/prediction), dropout is **disabled** and all neurons are used — but the outputs are scaled accordingly to match the training distribution.
