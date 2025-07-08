@@ -207,3 +207,12 @@ Weights get updated after the **1st batch** is passed on to the **2nd batch** wh
 
 ---
 ![loss_comparison](notes_images/loss_comparison.jpg)
+
+---
+### Memory Usage
+
+Mini-batch gradient descent is designed to be **memory-efficient**, especially for large datasets.
+
+Instead of loading the entire dataset (like in batch gradient descent), mini-batch GD only loads a small chunk (e.g., 32, 64, 128 samples) at a time.
+
+✅ **Advantage**: You save a lot of RAM or GPU memory, which is critical when training on large datasets (like ImageNet, etc.).
