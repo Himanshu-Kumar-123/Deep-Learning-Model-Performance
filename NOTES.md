@@ -158,3 +158,52 @@ Dropout is a layer which is applied on top of a dense layer. All neurons from th
 All the input and output connections of neurons in dropout get deactivated.
 
 Ideally, a dropout layer should be applied after every 2–3 dense layers. Dropout probability is a hyperparameter.
+
+# Batch Normalization
+
+### Types of Gradient Descent
+
+- **Batch Gradient Descent** uses the entire dataset to compute gradients and update weights.  
+  *(Batch size = N, where N = number of rows)*
+
+- **Stochastic Gradient Descent (SGD)** uses one sample at a time to compute gradients and update weights.  
+  *(Batch size = 1)*
+
+- **Mini-Batch Gradient Descent** uses small batches of data to compute gradients and update weights.  
+  *(1 < Batch size < N)*
+
+---
+
+### Example: 1000 Rows
+
+### Total 1000 rows
+
+| **Normal Gradient Descent**                                 | **Mini-Batch Gradient Descent**                                             |
+|-------------------------------------------------------------|------------------------------------------------------------------------------|
+| 1. Take these 1000 rows, calculate 1000 𝑦̂.                  | 1. Take 100 rows, calculate 100 𝑦̂.                                          |
+| 2. Calculate 1000 losses and based on that backpropagate.   | 2. Calculate 100 losses and based on that backpropagate.                    |
+|                                                             | 3. Do the step again for another 100 rows (at random).                      |
+|                                                             | 4. ...<br>.<br>.<br>10 times                                                |
+| **1 epoch = 1 update**                                      | **1 epoch = 10 updates**                                                    |
+
+> Every time the batch selection is random.
+
+---
+
+### How Does It Work?
+
+Let’s say you have 1000 rows (examples) in your dataset:
+
+1. Take a small batch — e.g., 100 rows  
+2. **Forward pass**: Calculate 100 predictions (𝑦̂)  
+3. **Loss calculation**: Compute loss for these 100  
+4. **Backpropagation**: Update weights based on this batch  
+5. **Repeat**: Pick the next batch of 100 (randomly)  
+6. Do this for all 10 batches (since 1000 ÷ 100 = 10)
+
+---
+
+### How Does It Help?
+
+Weights get updated after the **1st batch**, so when the **2nd batch** comes, it starts with better weights than random ones.  
+This process continues and improves weights across batches.
