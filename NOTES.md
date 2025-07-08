@@ -150,4 +150,11 @@ This prevents the network from becoming overly dependent on particular neurons, 
 
 > ⚠️ Note: During inference (testing/prediction), dropout is **disabled** and all neurons are used.
 
+
 ![dropout](notes_images/dropout.jpg)
+
+Dropout is a layer which is applied on top of a dense layer. All neurons from the dense layer can randomly get dropped from the training process. This ensures that the other neurons have to participate.
+
+All the input and output connections of neurons in dropout get deactivated.
+
+Ideally, a dropout layer should be applied after every 2–3 dense layers. Dropout probability is a hyperparameter.
