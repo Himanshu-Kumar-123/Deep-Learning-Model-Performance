@@ -203,5 +203,4 @@ Let’s say you have 1000 rows (examples) in your dataset:
 
 ### How Does It Help?
 
-Weights get updated after the **1st batch**, so when the **2nd batch** comes, it starts with better weights than random ones.  
-This process continues and improves weights across batches.
+Weights get updated after the **1st batch** is passed on to the **2nd batch** which is better than the random weights. This process keeps improving the weights in the subsequent batches.
