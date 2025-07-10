@@ -220,14 +220,20 @@ Instead of loading the entire dataset (like in batch gradient descent), mini-bat
 ### Understanding Batch Normalization
 
 1. **Compute the Mean and Variance (per mini-batch):**  
-   For a given mini-batch of inputs \( x_1, x_2, ..., x_m \):
+   For a given mini-batch of inputs $x_1$, $x_2$, ..., $x_m$:
 
-   $$
-   \mu_B = \frac{1}{m} \sum_{i=1}^{m} x_i \quad \text{and} \quad 
-   \sigma_B^2 = \frac{1}{m} \sum_{i=1}^{m} (x_i - \mu_B)^2
-   $$
+$$
+\mu_B = \frac{1}{m} \sum_{i=1}^{m} x_i
+$$
+
+$$
+\sigma_B^2 = \frac{1}{m} \sum_{i=1}^{m} (x_i - \mu_B)^2
+$$
 
 Where:
-- \( \mu_B \): mean of the batch  
-- \( \sigma_B^2 \): variance of the batch  
-- \( m \): batch size
+
+$\mu_B$ → mean of the current mini-batch  
+$\sigma_B^2$ → variance of the current mini-batch  
+$m$ → batch size  
+$x_i$ → the $i^{th}$ input in the batch
+
