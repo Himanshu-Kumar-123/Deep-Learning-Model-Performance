@@ -257,3 +257,20 @@ $\hat{x}_i$ → normalized input
 $\gamma$ → scaling parameter (learnable)  
 $\beta$ → shifting parameter (learnable)  
 $y_i$ → final output after batch normalization
+
+### 📦 Steps Summary
+
+1. Calculate mean and variance of batch  
+2. Normalize each input using mean and standard deviation  
+3. Scale and shift normalized values using trainable parameters  
+
+---
+
+### ⚠️ Notes
+
+- **Works differently during training and inference**:  
+  - During training: uses **mini-batch statistics**  
+  - During inference: uses **running averages** of mean and variance  
+
+- Usually applied **between** a layer’s output and its activation function.
+
