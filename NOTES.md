@@ -216,3 +216,18 @@ Mini-batch gradient descent is designed to be **memory-efficient**, especially f
 Instead of loading the entire dataset (like in batch gradient descent), mini-batch GD only loads a small chunk (e.g., 32, 64, 128 samples) at a time.
 
 ✅ **Advantage**: You save a lot of RAM or GPU memory, which is critical when training on large datasets (like ImageNet, etc.).
+
+### Understanding Batch Normalization
+
+1. **Compute the Mean and Variance (per mini-batch):**  
+   For a given mini-batch of inputs \( x_1, x_2, ..., x_m \):
+
+   $$
+   \mu_B = \frac{1}{m} \sum_{i=1}^{m} x_i \quad \text{and} \quad 
+   \sigma_B^2 = \frac{1}{m} \sum_{i=1}^{m} (x_i - \mu_B)^2
+   $$
+
+Where:
+- \( \mu_B \): mean of the batch  
+- \( \sigma_B^2 \): variance of the batch  
+- \( m \): batch size
