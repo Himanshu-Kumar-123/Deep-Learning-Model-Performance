@@ -237,3 +237,23 @@ $\sigma_B^2$ → variance of the current mini-batch
 $m$ → batch size  
 $x_i$ → the $i^{th}$ input in the batch
 
+2. **Normalize the Batch:**
+
+$$
+\hat{x}_i = \frac{x_i - \mu_B}{\sqrt{\sigma_B^2 + \epsilon}}
+$$
+
+$\epsilon$ → small constant for numerical stability
+
+3. **Scale and Shift with Learnable Parameters:**
+
+$$
+y_i = \gamma \hat{x}_i + \beta
+$$
+
+Where:
+
+$\hat{x}_i$ → normalized input  
+$\gamma$ → scaling parameter (learnable)  
+$\beta$ → shifting parameter (learnable)  
+$y_i$ → final output after batch normalization
