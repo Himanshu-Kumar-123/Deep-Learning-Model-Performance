@@ -274,3 +274,4 @@ $y_i$ → final output after batch normalization
 
 - Usually applied **between** a layer’s output and its activation function.
 
+
